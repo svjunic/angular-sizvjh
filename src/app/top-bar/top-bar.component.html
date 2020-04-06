@@ -2,7 +2,20 @@
   <h1>Hello World!</h1>
 </a>
 
-<a class="button fancy-button"><i class="material-icons">shopping_cart</i>Checkout</a>
+<!-- 
+  [routerLink]="['/']"
+  routerLink="/"
+
+
+パラメータの送り方
+https://angular.io/api/router/RouterLink
+https://qiita.com/ksh-fthr/items/91c85a06998314c95648
+
+<a [routerLink]="['/user/bob']" [queryParams]="{debug: true}" queryParamsHandling="merge">
+  link to user component
+</a>
+-->
+<a routerLink="/cart" class="button fancy-button"><i class="material-icons">shopping_cart</i>Checkout</a>
 
 <!-- 
 Copyright Google LLC. All Rights Reserved.
