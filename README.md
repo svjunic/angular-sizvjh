@@ -11,3 +11,6 @@ ng config schematics.@schematics/angular:component.styleext scss
 
 ## sass有効にする
 https://qiita.com/nksm/items/e6e68833e9410a2ee7da
+
+## ng
+https://qiita.com/emalock/items/da681b7ba6a3828835f5
