@@ -1,6 +1,27 @@
 <h3>Cart</h3>
 
 <div class="cart-item" *ngFor="let item of items">
-  <span>{{ item.name }}</span>
-  <span>{{ item.price | currency }}</span>
+	<span>{{ item.name }}</span>
+	<span>{{ item.price | currency }}</span>
+</div>
+
+<div>JPY表示確認</div>
+<div class="cart-item" *ngFor="let item of items">
+	<span>{{ item.name }}</span>
+	<span>{{ item.price | currency : 'JPY':true }}</span>
+</div>
+
+<div>
+	<blockquote>
+		<ol>
+			<li>元の値：{{value}}</li>
+			<li>currency（デフォルト）：{{value | currency}}</li>
+			<li>currency（コードのみ）：{{value | currency : 'JPY'}}</li>
+			<li>currency（円）：{{value | currency : 'JPY': true}}</li>
+			<li>currency（ユーロ）：{{value | currency : 'EUR': true}}</li>
+			<li>currency（桁数）：{{value | currency : 'JPY': true: '5.1-3'}}</li>
+		</ol>
+	</blockquote>
+	<a href="https://www.atmarkit.co.jp/ait/articles/1709/25/news121.html" target="_blank">resource</a>
+	<p>currencyは通貨の表示フォーマットに整形する</p>
 </div>

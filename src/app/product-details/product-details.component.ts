@@ -1,7 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
 
-// TODO: 非同期で読み込む場合を試したほうがいい
 import { products } from "../products";
 
 // サービスの読み込み（ストア的なやつ）
