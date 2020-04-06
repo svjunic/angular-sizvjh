@@ -2,8 +2,10 @@
 
 	<h2>Products</h2>
 
-	<div *ngFor="let product of products">
-		<h3><a [title]="product.name + ' details'">{{product.name}}</a></h3>
+	<div *ngFor="let product of products; index as productId">
+		<h3>
+      <a [title]="product.name + ' details'" [routerLink]="['/products', productId+1]">{{product.name}}</a>
+    </h3>
 		<div>
 			<p *ngIf="product.description">Description: {{ product.description }}</p>
 			<div class="product-list_nav">
@@ -32,7 +34,6 @@
 	<ul *ngFor="let product of products; index as i">
 		<li><a [title]="product.name + ' details'">{{i+1}} : {{product.name}}</a></li>
 	</ul>
-
 
 
 </section>
