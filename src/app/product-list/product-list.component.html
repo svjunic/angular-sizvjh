@@ -1,28 +1,37 @@
 <section>
 
-<h2>Products</h2>
+	<h2>Products</h2>
 
-<div *ngFor="let product of products">
-  <h3><a [title]="product.name + ' details'">{{product.name}}</a></h3>
-  <div>
-    <p *ngIf="product.description">Description: {{ product.description }}</p>
-    <button (click)="share()">Share</button>
-  </div>
-</div>
-
-
-<dl *ngFor="let product of products; index as i">
-  <dt><a [title]="product.name + ' details'">{{i+1}} : {{product.name}}</a></dt>
-  <dd *ngIf="product.description else elseBlock">
-    Description: {{ product.description }}
-  </dd>
-  <ng-template #elseBlock><dd>description not found.</dd></ng-template>
-</dl>
+	<div *ngFor="let product of products">
+		<h3><a [title]="product.name + ' details'">{{product.name}}</a></h3>
+		<div>
+			<p *ngIf="product.description">Description: {{ product.description }}</p>
+			<div class="product-list_nav">
+				<div class="product-list_nav-item">
+					<button (click)="share()">Share</button>
+				</div>
+				<div class="product-list_nav-item">
+					<app-product-alerts>Notify Me</app-product-alerts>
+				</div>
+			</div>
+		</div>
+	</div>
 
 
-<ul *ngFor="let product of products; index as i">
-  <li><a [title]="product.name + ' details'">{{i+1}} : {{product.name}}</a></li>
-</ul>
+	<dl *ngFor="let product of products; index as i">
+		<dt><a [title]="product.name + ' details'">{{i+1}} : {{product.name}}</a></dt>
+		<dd *ngIf="product.description else elseBlock">
+			Description: {{ product.description }}
+		</dd>
+		<ng-template #elseBlock>
+			<dd>description not found.</dd>
+		</ng-template>
+	</dl>
+
+
+	<ul *ngFor="let product of products; index as i">
+		<li><a [title]="product.name + ' details'">{{i+1}} : {{product.name}}</a></li>
+	</ul>
 
 
 

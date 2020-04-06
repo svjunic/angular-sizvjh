@@ -1,4 +1,15 @@
-
+.product-list_nav {
+  display:flex;
+}
+.product-list_nav-item {
+  padding: 0 10px;
+}
+.product-list_nav-item:first-child {
+  padding: 0 10px 0 0;
+}
+.product-list_nav-item:last-child{
+  padding: 0 0 0 10px;
+}
 
 /*
 Copyright Google LLC. All Rights Reserved.
