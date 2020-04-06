@@ -6,9 +6,7 @@
     "baseUrl": "./src/app/",
     "paths": {
       "~/*": ["./src/*"],
-      "~": ["./src"],
-      //"@/*": ["./src/*"],
-      //"@": ["./src"]
+      "~": ["./src"]
     },
     "lib": [
       "dom",
@@ -22,11 +20,9 @@
     "forceConsistentCasingInFileNames": true,
     "moduleResolution": "node",
     "resolveJsonModule": true,
-    "isolatedModules": true,
+    "isolatedModules": true
     //"noEmit": true,
-    "jsx": "react",
     //"jsx": "preserve"
-    "typeRoots" : ["./src/@types"]
   },
   "include": [
     "src"
