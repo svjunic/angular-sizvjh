@@ -8,3 +8,4 @@ https://qiita.com/MasanobuAkiba/items/6b825569a1dd090d4efc
 ```
 ng config schematics.@schematics/angular:component.styleext scss
 ```
+`
