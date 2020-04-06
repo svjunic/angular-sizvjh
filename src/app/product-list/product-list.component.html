@@ -11,7 +11,7 @@
 					<button (click)="share()">Share</button>
 				</div>
 				<div class="product-list_nav-item">
-					<app-product-alerts>Notify Me</app-product-alerts>
+					<app-product-alerts [product]="product" (notify)="onNotify()">Notify Me</app-product-alerts>
 				</div>
 			</div>
 		</div>
