@@ -3,7 +3,7 @@
     "target": "es5",
     "module": "ESNext",
     //"strict": true,
-    "baseUrl": "./",
+    "baseUrl": "./src/app/",
     "paths": {
       "~/*": ["./src/*"],
       "~": ["./src"],
@@ -20,7 +20,6 @@
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
-    "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
