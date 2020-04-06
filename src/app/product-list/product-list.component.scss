@@ -1,0 +1,20 @@
+.product-list{
+  &_nav {
+    display:flex;
+    &-item {
+      padding: 0 10px;
+      &:first-child {
+        padding: 0 10px 0 0;
+      }
+      &:last-child{
+        padding: 0 0 0 10px;
+      }
+    }
+  }
+}
+
+/*
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+*/
