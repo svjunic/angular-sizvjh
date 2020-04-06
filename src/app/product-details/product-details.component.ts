@@ -26,7 +26,7 @@ export class ProductDetailsComponent implements OnInit {
       console.log(typeof params.get("productId"));
       console.log(parseInt(params.get("productId"), 10));
       this.productId = parseInt(params.get("productId"), 10);
-      this.product = products[this.productId + 1];
+      this.product = products[this.productId-1];
     });
   }
 
