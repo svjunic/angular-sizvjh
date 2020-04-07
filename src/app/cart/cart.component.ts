@@ -17,6 +17,7 @@ export class CartComponent implements OnInit {
     private cartService: CartService,
     private formBuilder: FormBuilder
   ) {
+    // フォームの要素を定義、関連付けはここ
     this.checkoutForm = this.formBuilder.group({
       name: '',
       address: ''
